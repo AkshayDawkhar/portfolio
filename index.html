@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Saurabh Jaiswal | Portfolio</title>
   <style>
     * {
       margin: 0;
@@ -12,44 +12,82 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
       line-height: 1.6;
     }
 
     header {
-      background: #333;
+      background: #1f1f1f;
       color: #fff;
-      padding: 20px 0;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     }
 
-    header h1 {
-      font-size: 2.5rem;
+    .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+
+    @media (min-width: 600px) {
+      .header-content {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        text-align: left;
+      }
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #90caf9;
+    }
+
+    .header-text h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+    }
+
+    .header-text p {
+      font-size: 1.2rem;
+      color: #ccc;
     }
 
     nav ul {
       display: flex;
       justify-content: center;
       list-style: none;
-      padding: 10px;
-      background: #444;
+      padding: 15px;
+      background: #2a2a2a;
     }
 
     nav ul li {
-      margin: 0 15px;
+      margin: 0 20px;
     }
 
     nav ul li a {
-      color: white;
+      color: #90caf9;
       text-decoration: none;
+      font-weight: bold;
     }
 
     .section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+    }
+
+    h2 {
+      color: #90caf9;
+      margin-bottom: 20px;
+      font-size: 2rem;
     }
 
     .projects {
@@ -59,15 +97,20 @@
     }
 
     .project {
-      background: white;
+      background: #1e1e1e;
       padding: 20px;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      color: #fff;
     }
 
     footer {
-      background: #333;
-      color: white;
+      background: #1f1f1f;
+      color: #bbb;
       text-align: center;
       padding: 20px 0;
     }
@@ -76,23 +119,102 @@
       display: inline-block;
       margin-top: 10px;
       padding: 10px 15px;
-      background: #007BFF;
+      background: #1976d2;
       color: white;
       text-decoration: none;
       border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background: #1565c0;
+    }
+
+    .experience {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .experience h3 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .skills {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skills-list span {
+      background: #2a2a2a;
+      padding: 8px 12px;
+      border-radius: 5px;
+      color: #90caf9;
+      font-weight: bold;
+    }
+
+    .timeline {
+      margin-top: 20px;
+      border-left: 3px solid #90caf9;
+      padding-left: 20px;
+    }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background-color: #90caf9;
+      border-radius: 50%;
+    }
+
+    .timeline-item h4 {
+      color: #fff;
+      margin: 0;
+    }
+
+    .timeline-item p {
+      margin: 5px 0 0;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Full-Stack Developer | Flutter | Golang</p>
+    <div class="header-content">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-img" />
+      <div class="header-text">
+        <h1>Saurabh Jaiswal</h1>
+        <p>Full-Stack Developer | Flutter | Golang</p>
+      </div>
+    </div>
   </header>
 
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#technologies">Technologies</a></li>
+      <li><a href="#timeline">Timeline</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -104,32 +226,107 @@
     </p>
   </section>
 
+  <section id="experience" class="section">
+    <h2>Work Experience</h2>
+    <div class="experience">
+      <h3>Software Engineer – XYZ Tech Solutions</h3>
+      <p><em>Jan 2022 – Present</em></p>
+      <p>Developed and maintained mobile apps in Flutter and backends in Go. Collaborated with cross-functional teams to deliver robust products. Optimized code for scalability and performance.</p>
+    </div>
+    <br />
+    <div class="experience">
+      <h3>Backend Developer Intern – ABC Innovations</h3>
+      <p><em>May 2021 – Dec 2021</em></p>
+      <p>Assisted in building microservices using Golang and integrated REST APIs for mobile applications. Worked with Docker and CI/CD pipelines.</p>
+    </div>
+  </section>
+
   <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2>Major Projects</h2>
     <div class="projects">
       <div class="project">
-        <h3>Project One</h3>
-        <p>Brief description of the project.</p>
+        <h3>Major Project One</h3>
+        <p>Key feature-rich project that highlights your best work.</p>
         <a href="#" class="button">View Project</a>
       </div>
       <div class="project">
-        <h3>Project Two</h3>
-        <p>Brief description of the project.</p>
+        <h3>Major Project Two</h3>
+        <p>Another impactful project demonstrating your skills.</p>
         <a href="#" class="button">View Project</a>
       </div>
-      <!-- Add more project divs as needed -->
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Other Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Side Project One</h3>
+        <p>Smaller project or experiment.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+      <div class="project">
+        <h3>Side Project Two</h3>
+        <p>Another side project or utility.</p>
+        <a href="#" class="button">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="technologies" class="section">
+    <h2>Technologies & Languages</h2>
+    <div class="skills">
+      <div class="skills-list">
+        <span>Flutter</span>
+        <span>Dart</span>
+        <span>Golang</span>
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>REST APIs</span>
+        <span>Docker</span>
+        <span>CI/CD</span>
+        <span>Git</span>
+        <span>PostgreSQL</span>
+        <span>Firebase</span>
+        <span>GraphQL</span>
+        <span>Tailwind CSS</span>
+        <span>React</span>
+        <span>MongoDB</span>
+        <span>Appwrite</span>
+        <span>Supabase</span>
+        <span>Redis</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="timeline" class="section">
+    <h2>Timeline</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Graduated with B.Tech in Computer Science</h4>
+        <p>2021</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Backend Intern at ABC Innovations</h4>
+        <p>May 2021 – Dec 2021</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Software Engineer at XYZ Tech Solutions</h4>
+        <p>Jan 2022 – Present</p>
+      </div>
     </div>
   </section>
 
   <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: your.email@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
+    <p>GitHub: <a href="https://github.com/saurabhjdev" target="_blank">@saurabhjdev</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <p>&copy; 2025 Saurabh Jaiswal. All rights reserved.</p>
   </footer>
 </body>
 </html>
