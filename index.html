@@ -33,7 +33,7 @@
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: 0 auto;
       padding: 0 20px;
     }
@@ -358,7 +358,7 @@
 
     .experience-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 30px;
     }
 
@@ -695,6 +695,9 @@
       background: var(--dark-light);
       padding: 30px;
       border-radius: 10px;
+      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .contact-info h3 {
@@ -707,6 +710,7 @@
       display: flex;
       align-items: flex-start;
       margin-bottom: 25px;
+      flex: 1 1 200px;
     }
 
     .contact-icon {
@@ -947,7 +951,7 @@
   <header id="header">
     <div class="container header-content">
       <a href="#" class="logo">
-        <img src="/api/placeholder/80/80" alt="AD Logo">
+        <img src="akshay_dawkhar.jpeg" alt="AD Logo">
         <span>Akshay</span>
       </a>
       <button class="mobile-menu-btn">☰</button>
@@ -958,7 +962,7 @@
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#timeline">Timeline</a></li>
+          <!-- <li><a href="#timeline">Timeline</a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -967,12 +971,12 @@
 
   <section id="home" class="hero">
     <div class="container hero-content">
-      <img src="/api/placeholder/300/300" alt="Akshay Dawkhar" class="hero-image">
+      <img src="akshay_dawkhar.jpeg" alt="Akshay Dawkhar" class="hero-image">
       <h1>I'm <span>Akshay Dawkhar</span></h1>
       <div class="hero-tags">
         <span class="tag">Full-Stack Developer</span>
-        <span class="tag">Flutter Expert</span>
-        <span class="tag">Golang Engineer</span>
+        <span class="tag">Backend Expert</span>
+        <span class="tag">Flutter Engineer</span>
       </div>
       <p>Passionate about building elegant, efficient, and scalable mobile and web applications that solve real-world problems.</p>
       <div>
@@ -980,17 +984,17 @@
         <a href="#contact" class="btn btn-outline">Let's Connect</a>
       </div>
       <div class="social-links">
-        <a href="#" class="social-icon">
-          <i>GH</i>
+        <a href="https://github.com/AkshayDawkhar" class="social-icon">
+          <img src="github-mark-white.png" alt="GH" width="35" height="35">
         </a>
-        <a href="#" class="social-icon">
-          <i>LI</i>
+        <a href="https://www.linkedin.com/in/akshaydawkhar/" class="social-icon">
+          <img src="lii.png" alt="LI" width="35" height="35">
         </a>
-        <a href="#" class="social-icon">
-          <i>TW</i>
+        <a href="https://x.com/akshaydawkhar59" class="social-icon">
+          <img src="x.png" alt="TW" width="35" height="35">
         </a>
-        <a href="#" class="social-icon">
-          <i>EM</i>
+        <a href="mailto:akshaydawkhar@gmail.com" class="social-icon">
+          <img src="gmail.png" alt="Email" width="35" height="35">
         </a>
       </div>
     </div>
@@ -1004,7 +1008,7 @@
       </div>
       <div class="about-content">
         <div class="about-image">
-          <img src="/api/placeholder/600/400" alt="Akshay working">
+          <!-- <img src="/api/placeholder/600/400" alt="Akshay working"> -->
         </div>
         <div class="about-text">
           <h3>Who am I?</h3>
@@ -1038,30 +1042,287 @@
       </div>
       <div class="experience-container">
         <div class="experience-card">
-          <span class="experience-date">Jan 2022 - Present</span>
-          <h3 class="experience-role">Software Engineer</h3>
-          <p class="experience-company">XYZ Tech Solutions</p>
-          <p class="experience-desc">Leading the development of mobile applications using Flutter and creating robust backend services with Golang. Optimizing code for performance and scalability while collaborating with cross-functional teams.</p>
+          <span class="experience-date">Aug 2023 - Present</span>
+          <h3 class="experience-role">Backend Engineer</h3>
+          <p class="experience-company">EC Infosolutions</p>
+          <p class="experience-desc">Leading the development of mobile applications using Flutter and creating robust backend services with Golang and python. Optimizing code for performance and scalability while collaborating with cross-functional teams.</p>
           <ul style="margin-left: 20px; margin-bottom: 15px;">
-            <li>Implemented CI/CD pipelines that reduced deployment time by 40%</li>
-            <li>Optimized database queries resulting in 30% faster response times</li>
-            <li>Developed reusable components that accelerated UI development</li>
+            <li>Improved database performance by 30% through query optimization</li>
+            <li>Cut server costs by 20% via efficient resource management</li>
+            <li>Maintained 99.9% uptime while serving over 100,000 users</li>
+            <li>Implemented auto-scaling to handle peak loads with zero downtime</li>
           </ul>
           <div class="skills-list" style="margin-top: 15px;">
-            <span class="skill-item">Flutter</span>
+            <span class="skill-item">python</span>
             <span class="skill-item">Golang</span>
+            <span class="skill-item">Fast API</span>
+            <span class="skill-item">Flask</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">Flutter</span>
             <span class="skill-item">Docker</span>
           </div>
         </div>
         <div class="experience-card">
-          <span class="experience-date">Jun 2023 - Present</span>
-          <h3 class="experience-role">Freelance Developer</h3>
-          <p class="experience-company">Self-employed</p>
+          <span class="experience-date">Jun 2022 - Aug 2023</span>
+          <h3 class="experience-role">Full Stack Developer</h3>
+          <p class="experience-company">TechKwiq Matrix</p>
           <p class="experience-desc">Working with various clients to deliver custom mobile and web applications. Providing end-to-end solutions from design to deployment.</p>
           <ul style="margin-left: 20px; margin-bottom: 15px;">
             <li>Developed a Flutter e-commerce app for a boutique retail chain</li>
-            <li>Created a Golang-based API for a healthcare startup</li>
+            <li>Created a Django-based API for a healthcare startup</li>
             <li>Built a real-time messaging platform using WebSockets</li>
           </ul>
           <div class="skills-list" style="margin-top: 15px;">
             <span class="skill-item">Flutter</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">Firebase</span>
+          </div>
+        </div>
+        <div class="experience-card">
+          <span class="experience-date">Jan 2022 - Aug 2023</span>
+          <h3 class="experience-role">Freelance Developer</h3>
+          <p class="experience-company">Self-Employed</p>
+          <p class="experience-desc">
+            Collaborating with clients to build custom mobile and web applications. Delivering full-stack solutions from concept and design to deployment and maintenance.</p>
+        
+            <ul style="margin-left: 20px; margin-bottom: 15px;">
+            <li>Developed a Flutter-based stock management app for a boutique retail chain</li>
+            <li>Implemented a Django REST API for an e-commerce platform</li>
+            <li>Built a real-time event management system using WebSockets</li>
+          </ul>
+          <div class="skills-list" style="margin-top: 15px;">
+            <span class="skill-item">Flutter</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">Firebase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Some of my recent work</p>
+      </div>
+      <div class="projects-container">
+        <!-- Example project card -->
+        <div class="project-card">
+          <div class="project-image">
+             <img src="unnamed.webp" alt="Project Image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Social Media App</h3>
+            <p class="project-desc">
+              A social media application over 10k active users, allowing users to connect, share, and interact in real-time. Features include Live class's, personal recommendation, real-time messaging, and a Yoga learning center.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Django</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Recommendation Systems</span>
+              <span class="project-tag">Video Streaming</span>
+              <span class="project-tag">Live Streaming</span>
+              <span class="project-tag">Media Encoding</span>
+              <span class="project-tag">Massaging</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="https://yokeyoga.com/" class="project-link project-demo">View</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+             <img src="image.png" alt="Project Image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Chiropractors App</h3>
+            <p class="project-desc">
+              A Doctor's appointment booking application. Which allows users to analysis and correct the posture, book appointments with doctors, view their profiles, and manage their bookings. The app also includes a chat feature for real-time communication between patients and doctors.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">Fast API</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">SSE</span>
+              <span class="project-tag">OpenAI API</span>
+              <span class="project-tag">Media Encoding</span>
+              <span class="project-tag">Massaging</span>
+            </div>
+            
+            <div class="project-links">
+              <a href="video_page.html" class="project-link project-demo">View Demo</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Shopify App builder</h3>
+            <p class="project-desc">
+              A Shopify app builder that allows users to create custom Shopify apps. The app provides a range of templates and customization options, making it easy for users to build their own apps with less efforts.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Shopify</span>
+              <span class="project-tag">Flutter</span>
+              <span class="project-tag">React Native</span>
+              <span class="project-tag">Fast API</span>
+              <span class="project-tag">Firebase</span>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Shopify API</span>
+              <span class="project-tag">GraphQL</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">CI/CD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Skills</h2>
+        <p class="section-subtitle">Technologies and tools I'm proficient with</p>
+      </div>
+      <div class="skills-container">
+        <div class="skill-category">
+          <h3>Backend (4.5/5)</h3>
+          <div class="skills-list">
+            <span class="skill-item">Golang</span>
+            <span class="skill-item">Kafka</span>
+            <span class="skill-item">Flink</span>
+            <span class="skill-item">Nginx</span>
+            <span class="skill-item">Grafana</span>
+            <span class="skill-item">Elastic stack</span>
+            <span class="skill-item">Celery</span>
+            <span class="skill-item">FastAPI</span>
+            <span class="skill-item">Flask</span>
+            <span class="skill-item">Django</span>
+            <span class="skill-item">Node.js</span>
+            <span class="skill-item">CDN</span>
+            <span class="skill-item">Recommendation Systems</span>
+
+      </div>
+        </div>
+        <div class="skill-category">
+          <h3>DataBase (3/5)</h3>
+          <div class="skills-list">
+            <span class="skill-item">PostgreSQL</span>
+            <span class="skill-item">MongoDB</span>
+            <span class="skill-item">MySQL</span>
+            <span class="skill-item">Redis</span>
+            <span class="skill-item">ElasticSearch</span>
+            <span class="skill-item">Vector DB</span>
+            <span class="skill-item">Graph DB</span>
+            <span class="skill-item">Time Series DB</span>
+            <span class="skill-item">Cassandra</span>
+      </div>
+        </div>
+        <div class="skill-category">
+          <h3>Mobile Application (3/5)</h3>
+          <div class="skills-list">
+            <span class="skill-item">Flutter</span>
+            <span class="skill-item">Firebase</span>
+            <span class="skill-item">Dart</span>
+      </div>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud (3.5/5)</h3>
+          <div class="skills-list">
+              <span class="skill-item">AWS</span>
+              <span class="skill-item">GCP</span>
+              <span class="skill-item">Cloudflare</span>
+              <span class="skill-item">Docker</span>
+              <span class="skill-item">Kubernetes</span>
+        </div>
+        </div>
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <div class="skills-list">
+            <span class="skill-item">GO</span>
+            <span class="skill-item">Dart</span>            
+            <span class="skill-item">Python</span>
+            <span class="skill-item">JavaScript</span>
+            <span class="skill-item">HTML CSS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section" style="background: var(--dark-light);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-subtitle">Let's get in touch</p>
+      </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="location.png" alt="Location Icon" width="30" height="30">
+            </div>
+            <div class="contact-details">
+              <h4>Address</h4>
+              <p>Pune, India</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="phone.png" alt="Phone Icon" width="30" height="30">
+            </div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <a href="">+91 9730766511</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="gmail.png" alt="Email Icon" width="30" height="30">
+            </div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <a href="mailto:akshaydawkhar59@gmail.com">akshaydawkhar59@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="github-mark-white.png" alt="GitHub Icon" width="30" height="30">
+            </div>
+            <div class="contact-details">
+              <h4>GitHub</h4>
+              <a href="https://github.com/AkshayDawkhar/">github.com/AkshayDawkhar/</a>
+            </div>
+        </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <img src="lii.png" alt="GitHub Icon" width="30" height="30">
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/akshaydawkhar/">linkedin.com/in/akshaydawkhar</a>
+            </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <img src="x.png" alt="Twitter Icon" width="30" height="30">
+          </div>
+          <div class="contact-details">
+            <h4>Twitter</h4>
+            <a href="https://twitter.com/akshaydawkhar59">twitter.com/akshaydawkhar59</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </body>
+  </html>
+
+
